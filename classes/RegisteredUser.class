@@ -1,0 +1,16 @@
+<?php
+
+require_once('User.class');
+
+class RegisteredUser extends User {
+
+	protected $user_type = '1';
+
+	public function __construct($user_level="Regular User", $user_id='')
+	{
+		parent::__construct($user_level);
+		$this->user_id = $user_id;
+	}
+}
+
+?>

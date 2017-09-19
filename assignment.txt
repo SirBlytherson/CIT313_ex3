@@ -1,0 +1,49 @@
+In this exercise you will apply the concepts from this week’s lectures to your existing files from Exercise 2.   
+
+Once you have completed the assignment, deploy to your Corsair Server and save to GitHub.  Upload your files in a zip archive to the assignment page and provide the links to both Corsair and GitHub in the comments box of the Canvas ‘Turn In Assignment’ screen.
+
+First, Clone your Exercise 2 files from GitHub into your local Exercise 3 folder
+
+ 
+
+ABSTRACT CLASS
+
+Change your User class to an abstract class
+
+ 
+
+AUTOLOAD
+
+All php files in this exercise should autoload your classes using the spl_autoload_register method
+
+ 
+
+STATIC METHODS
+
+Create one static method in either the Admin or RegisteredUser class that performs the following mathematical evaluation.  The method should accept two parameters and return the result.  Both parameters will be numbers.  The numbers should be added together and multiplied by the first number.
+
+DO NOT CREATE AN INSTANCE OF THE CLASS.  CALL IT AS A STATIC METHOD
+
+ (a+b) * a
+
+The results of this static method should be output in your index.php file
+
+ 
+
+REGISTRATION FORM
+
+Create a registration form page that links from your index.php.  The form should gather the following values:
+
+    First Name
+    Last Name
+    Email Address
+
+Create a new file called results.php for processing and viewing the results.  The form should call this file via ‘post’
+
+(Remember the super variables!  $_POST)
+
+Within the results php file create a new RegisteredUser object (parameters should be ‘newuser’, ‘regular’)
+
+Set the form values into the new object.  Once the object is set test that the object is of the RegisteredUser class type via a function in the results.php file.
+
+Output the results of the registration to the results.php file if the object evaluation is true.

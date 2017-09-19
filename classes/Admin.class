@@ -1,0 +1,19 @@
+<?php
+
+require_once('User.class');
+
+class Admin extends User {
+
+	protected $user_type = '2';
+
+	public function __construct($user_level="Administer", $user_id='') {
+		parent::__construct($user_level);
+		$this->user_id = $user_id;
+	}
+	
+	public static function math($a, $b) {
+		return ($a + $b) * $a;
+	}
+}
+
+?>
